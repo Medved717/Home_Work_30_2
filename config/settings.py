@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "users",
     "educations",
+    "django_filters"
 ]
 
 MIDDLEWARE = [
@@ -102,3 +103,9 @@ MAILERS = {
 }
 
 AUTH_USER_MODEL = "users.User"
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',
+    ),
+}

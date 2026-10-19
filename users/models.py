@@ -44,7 +44,7 @@ class User(AbstractBaseUser):
         ordering = ("email",)
 
 
-class Payments(models.Model):
+class Payment(models.Model):
     CASH = 'CA'
     NON_CASH = 'NO'
 
